@@ -1,0 +1,112 @@
+
+%buttons {
+  padding:12px;
+  background-color: #f5f5f5;
+  border-style: none;
+
+}
+
+%buttons-hover{
+  border-style: solid;
+  border-width: thin;
+  border-color:#d4d5d6;
+}
+
+
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  height:100%;
+  flex-wrap: wrap;
+  .upper{
+    padding:10px;
+    display: flex;
+    align-self: flex-end;
+
+
+
+
+    a{
+      margin-left: 5px;
+      color:black;
+      font-size: 12px;
+      text-decoration: none;
+    }
+    #signin{
+      background-color: blue;
+      padding: 12px;
+      margin-top: -10px;
+      border-style: solid;
+      border-width: thin;
+      border-color: blue;
+      border-radius: 7px;
+    }
+
+  }
+  .middle{
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding:100px;
+    }
+
+
+    .search-bar{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      form{
+        .bar{
+          width: 572px;
+          height: 40px;
+          border-style: solid;
+          border-color:#dedddc;
+          border-radius:24px;
+          border-width: thin;
+        }
+        .search-button{
+          @extend %buttons;
+
+        }
+        .search-button:hover{
+          @extend %buttons-hover;
+        }
+      }
+      .Lucky{
+        display: flex;
+        flex-direction: column;
+        margin-top : 20px;
+        input{
+          @extend %buttons;
+        }
+        input:hover{
+          @extend %buttons-hover;
+        }
+
+      }
+    }
+
+
+
+
+    .language-options{
+      display: flex;
+      flex-direction: column;
+      height: 150px;
+      padding:40px;
+      align-items: center;
+      font-size: 14px;
+      a{
+        color:blue;
+        text-decoration: none;
+
+      }
+      a:hover{
+        text-decoration: underline;
+      }
+
+    }
+    }
